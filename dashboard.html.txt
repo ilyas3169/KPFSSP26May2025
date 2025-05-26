@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | E-Secretary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>E-Secretary</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                            <span>Emails</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-tasks"></i>
+                            <span>Tasks</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-users"></i>
+                            <span>Clients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="images/user-avatar.jpg" alt="User Avatar">
+                    <div class="user-info">
+                        <h4>John Doe</h4>
+                        <p>Admin</p>
+                    </div>
+                </div>
+                <a href="#" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-left">
+                    <h1>Dashboard</h1>
+                    <div class="breadcrumb">
+                        <a href="#">Home</a> / <span>Dashboard</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <div class="stat-icon bg-blue">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>24</h3>
+                            <p>Today's Appointments</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-green">
+                            <i class="fas fa-envelope-open"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>42</h3>
+                            <p>Unread Emails</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-orange">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>15</h3>
+                            <p>Pending Tasks</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon bg-purple">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>128</h3>
+                            <p>Total Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <div class="dashboard-col">
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3>Recent Appointments</h3>
+                                <a href="#" class="view-all">View All</a>
+                            </div>
+                            <div class="card-body">
+                                <table class="appointments-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Client</th>
+                                            <th>Purpose</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>09:00 AM</td>
+                                            <td>Sarah Johnson</td>
+                                            <td>Business Meeting</td>
+                                            <td><span class="status confirmed">Confirmed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11:30 AM</td>
+                                            <td>Michael Brown</td>
+                                            <td>Product Demo</td>
+                                            <td><span class="status pending">Pending</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>02:15 PM</td>
+                                            <td>Emily Davis</td>
+                                            <td>Consultation</td>
+                                            <td><span class="status confirmed">Confirmed</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>04:45 PM</td>
+                                            <td>Robert Wilson</td>
+                                            <td>Contract Signing</td>
+                                            <td><span class="status cancelled">Cancelled</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-col">
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3>Upcoming Tasks</h3>
+                                <a href="#" class="view-all">View All</a>
+                            </div>
+                            <div class="card-body">
+                                <ul class="tasks-list">
+                                    <li>
+                                        <div class="task-checkbox">
+                                            <input type="checkbox" id="task1">
+                                            <label for="task1"></label>
+                                        </div>
+                                        <div class="task-info">
+                                            <h4>Prepare quarterly report</h4>
+                                            <p>Due: Today, 5:00 PM</p>
+                                        </div>
+                                        <div class="task-priority high"></div>
+                                    </li>
+                                    <li>
+                                        <div class="task-checkbox">
+                                            <input type="checkbox" id="task2">
+                                            <label for="task2"></label>
+                                        </div>
+                                        <div class="task-info">
+                                            <h4>Send client proposals</h4>
+                                            <p>Due: Tomorrow, 10:00 AM</p>
+                                        </div>
+                                        <div class="task-priority medium"></div>
+                                    </li>
+                                    <li>
+                                        <div class="task-checkbox">
+                                            <input type="checkbox" id="task3">
+                                            <label for="task3"></label>
+                                        </div>
+                                        <div class="task-info">
+                                            <h4>Schedule team meeting</h4>
+                                            <p>Due: Tomorrow, 3:00 PM</p>
+                                        </div>
+                                        <div class="task-priority low"></div>
+                                    </li>
+                                    <li>
+                                        <div class="task-checkbox">
+                                            <input type="checkbox" id="task4">
+                                            <label for="task4"></label>
+                                        </div>
+                                        <div class="task-info">
+                                            <h4>Review marketing materials</h4>
+                                            <p>Due: Friday, 11:00 AM</p>
+                                        </div>
+                                        <div class="task-priority medium"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-row">
+                    <div class="dashboard-col">
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3>Recent Emails</h3>
+                                <a href="#" class="view-all">View All</a>
+                            </div>
+                            <div class="card-body">
+                                <ul class="emails-list">
+                                    <li class="unread">
+                                        <div class="email-sender">Amazon Web Services</div>
+                                        <div class="email-subject">Your AWS bill is ready</div>
+                                        <div class="email-preview">Your monthly invoice for AWS services is now available...</div>
+                                        <div class="email-time">10:30 AM</div>
+                                    </li>
+                                    <li>
+                                        <div class="email-sender">LinkedIn</div>
+                                        <div class="email-subject">You have 5 new connection requests</div>
+                                        <div class="email-preview">You have new connection requests waiting for your response...</div>
+                                        <div class="email-time">Yesterday</div>
+                                    </li>
+                                    <li>
+                                        <div class="email-sender">Sarah Johnson</div>
+                                        <div class="email-subject">Meeting agenda for tomorrow</div>
+                                        <div class="email-preview">Hi John, attached is the agenda for our meeting tomorrow...</div>
+                                        <div class="email-time">Yesterday</div>
+                                    </li>
+                                    <li>
+                                        <div class="email-sender">Twitter</div>
+                                        <div class="email-subject">New login to your account</div>
+                                        <div class="email-preview">We noticed a new login to your Twitter account from...</div>
+                                        <div class="email-time">Mar 15</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-col">
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3>Quick Actions</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="quick-actions">
+                                    <button class="quick-action-btn">
+                                        <i class="fas fa-calendar-plus"></i>
+                                        <span>New Appointment</span>
+                                    </button>
+                                    <button class="quick-action-btn">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>Compose Email</span>
+                                    </button>
+                                    <button class="quick-action-btn">
+                                        <i class="fas fa-plus-circle"></i>
+                                        <span>Add Task</span>
+                                    </button>
+                                    <button class="quick-action-btn">
+                                        <i class="fas fa-user-plus"></i>
+                                        <span>Add Client</span>
+                                    </button>
+                                    <button class="quick-action-btn">
+                                        <i class="fas fa-file-invoice"></i>
+                                        <span>Create Invoice</span>
+                                    </button>
+                                    <button class="quick-action-btn">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>View Reports</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

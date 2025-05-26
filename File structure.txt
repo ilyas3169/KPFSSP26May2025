@@ -1,0 +1,10 @@
+esecretary-website/
+├── index.html          # Main landing page
+├── dashboard.html      # Dashboard page
+├── css/
+│   ├── style.css       # Main styles
+│   └── dashboard.css   # Dashboard-specific styles
+├── js/
+│   ├── main.js         # Main JavaScript
+│   └── dashboard.js    # Dashboard JavaScript
+└── images/             # All website images
